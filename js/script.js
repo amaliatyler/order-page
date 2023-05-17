@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     /* выбор способа получения товара */
+
     const tabsBlock = document.querySelector('.tabs-block__tabs'),
           tabs = tabsBlock.querySelectorAll('.tab'),
           tabsContent = document.querySelector('.tabs-block__content'),
@@ -22,9 +23,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     tabsBlock.addEventListener('click', (event) => {
-        const target = event.target;
+        const target = event.target && event.target.closest('.tab');
 
-        if(target && target.classList.contains('tab')) {
+        if(target) {
             tabs.forEach((item, i) => {
                 if(target === item) {
                     hideTabContent();

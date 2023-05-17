@@ -11,3 +11,8 @@
 .hidden {
   display: none;
 }
+
+/* TODO подумать, надо ли */
+/* .no-click {
+  pointer-events: none;
+} */
