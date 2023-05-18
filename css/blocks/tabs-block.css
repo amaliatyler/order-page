@@ -9,6 +9,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
+  /* color: var(--color-text-yellow);*/
 }
 
 .tabs-block__tabs {
@@ -58,6 +59,7 @@
 
 .tab.active {
   background: url('../../img/link-checked.jpg');
+  /* background-color: var(--color-text-yellow); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
